@@ -379,7 +379,7 @@ body {
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
-  width: 1920px;
+  max-width: 1920px;
 }
 .picture.left::before {
   content: " ";
