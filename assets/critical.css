@@ -558,6 +558,10 @@ button {
   position: relative;
   margin-bottom: 0 !important;
   padding: 0;
+  width: 380px;
+  height: 380px;
+  max-width: 100%;
+  height: auto;
 }
 .item-column::after {
   content: "";
@@ -777,4 +781,13 @@ button {
 }
 .carousel-indicators .active {
   opacity: 1;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ck-8.woff2")
+    format("woff2");
 }
