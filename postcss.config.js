@@ -9,8 +9,9 @@ module.exports = {
         safelist: {
           standard: [
             'active', 'show', 'collapse', 'collapsing', 'fade', 'modal', 'tooltip', 'dropdown', 'alert',
-            'item-column', 'mb-4', 'col-12', 'col-sm-6', 'col-md-4', 'col-lg-4', 'col-xl-4', 'gallery-items-row', 'row' // Ajoute tes classes ici
-          ]
+            'item-column', 'mb-4', 'col-12', 'col-sm-6', 'col-md-4', 'col-lg-4', 'col-xl-4', 'gallery-items-row', 'row', 'mg-prev', 'mg-next' // Ajoute tes classes ici
+          ],
+          deep: [/modal/] // Capture toutes les classes contenant "modal"
         },
         defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
       })

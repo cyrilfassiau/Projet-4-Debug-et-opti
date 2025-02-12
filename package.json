@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss assets/bootstrap/bootstrap.css -o assets/bootstrap/bootstrap.min.css",
+    "build:css": "postcss assets/bootstrap/bootstrap.min.css -o assets/bootstrap/bootstrappap.min.css",
     "minify:js": "terser assets/bootstrap/bootstrap.bundle.js --compress --mangle --output assets/bootstrap/bootstrap.bundle.min.js",
     "purgecss": "postcss assets/bootstrap/bootstrap.css -o assets/bootstrap/bootstrapp.min.css"
   },
