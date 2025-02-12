@@ -1337,6 +1337,8 @@ summary {
   visibility: visible !important;
 }
 
+@import "bootstrap/dist/css/bootstrap.css";
+
 body {
   max-width: 1920px;
   margin: auto;
