@@ -38,7 +38,21 @@
   name="author"
   content="Nina Carducci"
 />
-    
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/critical.css">
+</noscript>
+<head>
+  <!-- Préchargement de jQuery -->
+  <link rel="preload" href="https://code.jquery.com/jquery-3.4.1.min.js" as="script">
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<script src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+<script src="./assets/maugallery.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/scripts.min.js"></script>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,26 +72,26 @@
     "priceRange": "€€"
   }
   </script>
-    <link rel="preload stylesheet" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/bootstrap/bootstrap.min.css" as="style">
+  
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/bootstrap/bootstrap.min.css">
+  </noscript>
+  
+   
+  
+ 
     
-    <link
-      rel="preload stylesheet"
-      href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/critical.css"
-      as="style"
-      />
-      <link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" type="image/webp">
-
+    <link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" type="image/avif">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Précharge les polices de manière asynchrone -->
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      as="style"
-      type="text/css"
-      crossorigin="anonymous"
-    />
+   
+     <!-- Préchargement des polices -->
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
     
+     <!-- Lien vers la feuille de style pour les polices -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+ 
     <title>Nina Carducci</title>
     
   </head>
@@ -131,8 +145,9 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            
             <img
-              src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+              src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif"
               class="d-block w-100"
               alt="Rue"
               fetchpriority="high"
@@ -189,12 +204,12 @@
         <img src="./assets/images/nina.webp" alt="nina" />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <h2 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </h2>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -208,7 +223,7 @@
       </div>
     </div>
     <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -306,19 +321,19 @@
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <h3 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h1>
+            </h3>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -330,7 +345,7 @@
             </p>
           </div>
           <div class="service__price">
-            <h4>350€/demi journée</h4>
+            <h3>350€/demi journée</h3>
             <span>Matériel, déplacement inclus</span>
           </div>
         </div>
@@ -356,7 +371,7 @@
             </p>
           </div>
           <div class="service__price">
-            <h4>400€ album A4</h4>
+            <h3>400€ album A4</h3>
             <span>30 pages recto/verso</span>
           </div>
         </div>
@@ -365,11 +380,11 @@
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <h3 class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </h3>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
@@ -377,7 +392,7 @@
     <div id="contact">
       <div class="container">
         <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
@@ -401,14 +416,9 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/maugallery.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cyrilfassiau/Projet-4-Debug-et-opti/assets/scripts.min.js"></script>
+   
+   
+    
   </body>
 </html>
 
